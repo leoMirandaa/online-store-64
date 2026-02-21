@@ -27,16 +27,16 @@ function Admin() {
 
 
   return (
-    <div className="container">
+    <div className="container bg-light">
       <h1 className="text-center">Store Administration</h1>
 
       <div className="d-flex gap-4">  
-        <section className="bg-primary w-50">
-          <h2>Add Products</h2>
+        <section className="bg-white w-50 border rounded-4 p-4">
+          <h2 className='text-center fw-semibold'>Add Products</h2>
         </section>
 
-        <section className="w-50 border rounded-3 p-4">
-          <h2 className="text-center">Add Coupons</h2>
+        <section className="bg-white w-50 border rounded-4 p-4">
+          <h2 className="text-center fw-semibold">Add Coupons</h2>
 
           <div>
             <div className="mb-4">
@@ -60,7 +60,7 @@ function Admin() {
             </div>
 
             <div className="text-center">
-              <button onClick={saveCoupon}>Save Coupon</button>
+              <button className='btn btn-dark' onClick={saveCoupon}>Save Coupon</button>
             </div>
           </div>
 
