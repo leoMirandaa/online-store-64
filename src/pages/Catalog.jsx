@@ -41,17 +41,17 @@ function Catalog() {
     setProdsToDisplay(list);
   }
 
-
-
   return (
-    <div className="catalog">
-      <h1>Check our amazing products</h1>
+    <div className="catalog px-5 bg-light">
+      <h1 className="text-center">Check our amazing products</h1>
       <div className="filters">
         <button onClick={clearFilter} className="btn btn-dark btn-filter">All</button>
         {categories.map(cat => <button key={cat} onClick={() => filter(cat)} className="btn btn-primary btn-filter">{cat}</button>)}
       </div>
+
       <hr />
-      <div className="product-list">
+
+      <div className="product-list d-flex gap-4 pb-4">
         {prodsToDisplay.map(prod => <Product key={prod._id} data={prod}/>)}
       </div>
     </div>

@@ -19,10 +19,10 @@ function QuantityPicker(props) {
   //...
 
   return(
-    <div>
-    <button className="btn-minus" onClick={handleDecrease} disabled={quantity === 1}>-</button> 
-    <label>{quantity}</label>
-    <button className="btn-plus" onClick={handleIncrease} >+</button>
+    <div className='d-flex justify-content-center align-items-center gap-2'>
+      <button className="btn-minus btn btn-outline-dark" onClick={handleDecrease} disabled={quantity === 1}>-</button> 
+      <label>{quantity}</label>
+      <button className="btn-plus btn btn-outline-dark" onClick={handleIncrease} >+</button>
     </div> 
   )
 }
